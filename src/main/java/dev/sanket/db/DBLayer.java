@@ -32,6 +32,20 @@ public class DBLayer
 
         return first;
     }
+    
+    public static List list(String queryName) {
+        
+        Session session = sessionFactory.openSession();
+
+        Transaction transaction = session.beginTransaction();
+        Query namedQuery = session.getNamedQuery(queryName);
+        List list = namedQuery.list();
+        transaction.rollback();
+        session.close();
+        
+        return list;
+    }
+    
 
     public static void saveOrUpdate(Object o)
     {

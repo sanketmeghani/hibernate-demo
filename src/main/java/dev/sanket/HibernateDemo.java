@@ -21,5 +21,7 @@ public class HibernateDemo {
         vehicle.setManufacturer("Honda");
 
         DBLayer.saveOrUpdate(vehicle);
+
+        DBLayer.list("listAddresses");
     }
 }

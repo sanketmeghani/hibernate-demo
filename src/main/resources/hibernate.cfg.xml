@@ -21,5 +21,6 @@
 		<mapping class="dev.sanket.db.model.User" />
 		<mapping class="dev.sanket.db.model.Vehicle" />
 		
+		<mapping resource="queries.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

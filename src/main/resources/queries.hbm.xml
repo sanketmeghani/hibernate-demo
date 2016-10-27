@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update"
+	auto-import="false">
+
+	<query name="listAddresses">
+        <![CDATA[from dev.sanket.db.model.Address]]>
+	</query>
+</hibernate-mapping>
